@@ -70,4 +70,5 @@ python3.7 mask_detection.py \
 - Include image augmentation in training
 - Detect from directory (now only available for masked detection)
 - Improvise generate tf records for custom dataset
+- Add mAP calculator
 
