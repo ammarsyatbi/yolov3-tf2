@@ -11,25 +11,30 @@ This model was trained for 100 epoch, I disabled early stopping to see how much 
 # Train / Val Loss
 
 # Test Images
-Single rear 
-<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210124_204438.jpg" alt="drawing" width="600" height="400"/>
-<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/IMG_20210124_204438.jpg" alt="drawing" width="600" height="400"/>
+### Single rear 
   
-Close up angled
-<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210224_062813.jpg" alt="drawing" width="600" height="400"/>
-<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/IMG_20210224_062813.jpg" alt="drawing" width="600" height="400"/>
+<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210124_204438.jpg" alt="drawing" width="500" height="300"/>
+<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/IMG_20210124_204438.jpg" alt="drawing" width="500" height="300"/>
   
-Noised with grill 
-<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210224_062808.jpg" alt="drawing" width="600" height="400"/>
-<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/IMG_20210224_062808.jpg" alt="drawing" width="600" height="400"/>
+### Close up angled
   
-Single car - front
-<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/singlecar.jpg" alt="drawing" width="600" height="400"/>
-<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/singlecar.jpg" alt="drawing" width="600" height="400"/>
+<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210224_062813.jpg" alt="drawing" width="300" height="500"/>
+<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/IMG_20210224_062813.jpg" alt="drawing" width="300" height="500"/>
   
-Multiple car
-<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/multicar.jpg" alt="drawing" width="600" height="400"/>
-<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/multicar.jpg" alt="drawing" width="600" height="400"/>
+### Noised with grill 
+  
+<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210224_062808.jpg" alt="drawing" width="500" height="300"/>
+<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/IMG_20210224_062808.jpg" alt="drawing" width="500" height="300"/>
+  
+### Single car - front
+  
+<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/singlecar.jpg" alt="drawing" width="500" height="300"/>
+<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/singlecar.jpg" alt="drawing" width="500" height="300"/>
+  
+### Multiple car
+  
+<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/multicar.jpg" alt="drawing" width="500" height="300"/>
+<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/multicar.jpg" alt="drawing" width="500" height="300"/>
 
 # How to use
 
