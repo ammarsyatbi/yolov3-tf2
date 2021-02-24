@@ -12,29 +12,29 @@ This model was trained for 100 epoch, I disabled early stopping to see how much 
 
 # Test Images
 Before: 
-![alt text](https://github.com/ammarsyatbi/yolov3-tf2/tree/master/data/results/before/IMG_20210124_204438.jpg)
+![alt text](https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210124_204438.jpg)
 After: 
-![alt text](https://github.com/ammarsyatbi/yolov3-tf2/tree/master/data/results/before/IMG_20210124_204438.jpg)
+![alt text](https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210124_204438.jpg)
 
 Before (Close up angled): 
-![alt text](https://github.com/ammarsyatbi/yolov3-tf2/tree/master/data/results/before/IMG_20210224_062813.jpg)
+![alt text](https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210224_062813.jpg)
 After (Close up angled): 
-![alt text](https://github.com/ammarsyatbi/yolov3-tf2/tree/master/data/results/before/IMG_20210224_062813.jpg)
+![alt text](https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210224_062813.jpg)
 
 Before (Noised with grill): 
-![alt text](https://github.com/ammarsyatbi/yolov3-tf2/tree/master/data/results/before/IMG_20210224_062808.jpg)
+![alt text](https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210224_062808.jpg)
 After (Noised with grill): 
-![alt text](https://github.com/ammarsyatbi/yolov3-tf2/tree/master/data/results/before/IMG_20210224_062808.jpg)
+![alt text](https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210224_062808.jpg)
 
 Before (Single car - front): 
-![alt text](https://github.com/ammarsyatbi/yolov3-tf2/tree/master/data/results/before/singlecar.jpg)
+![alt text](https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/singlecar.jpg)
 After (Single car - front): 
-![alt text](https://github.com/ammarsyatbi/yolov3-tf2/tree/master/data/results/before/singlecar.jpg)
+![alt text](https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/singlecar.jpg)
 
 Before (Multiple car): 
-![alt text](https://github.com/ammarsyatbi/yolov3-tf2/tree/master/data/results/before/multicar.jpg)
+![alt text](https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/multicar.jpg)
 After (Multiple car): 
-![alt text](https://github.com/ammarsyatbi/yolov3-tf2/tree/master/data/results/before/multicar.jpg)
+![alt text](https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/multicar.jpg)
 
 # How to use
 
