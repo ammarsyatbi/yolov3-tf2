@@ -13,28 +13,37 @@ This model was trained for 100 epoch, I disabled early stopping to see how much 
 # Test Images
 ### Single rear 
   
+<p float="left">
 <img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210124_204438.jpg" alt="drawing" width="500" height="300"/>
 <img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/IMG_20210124_204438.jpg" alt="drawing" width="500" height="300"/>
+</p>
   
 ### Close up angled
   
+<p float="left">
 <img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210224_062813.jpg" alt="drawing" width="300" height="500"/>
 <img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/IMG_20210224_062813.jpg" alt="drawing" width="300" height="500"/>
+ </p>
+
+### Noised with grill
   
-### Noised with grill 
-  
+<p float="left">
 <img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/IMG_20210224_062808.jpg" alt="drawing" width="500" height="300"/>
 <img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/IMG_20210224_062808.jpg" alt="drawing" width="500" height="300"/>
-  
+ </p>
+
 ### Single car - front
   
+<p float="left">
 <img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/singlecar.jpg" alt="drawing" width="500" height="300"/>
-<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/singlecar.jpg" alt="drawing" width="500" height="300"/>
+<img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/singlecar.jpg" alt="drawing" width="500" height="300"/></p>
   
 ### Multiple car
   
+ <p float="left">
 <img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/before/multicar.jpg" alt="drawing" width="500" height="300"/>
 <img src="https://github.com/ammarsyatbi/yolov3-tf2/blob/master/data/results/after/multicar.jpg" alt="drawing" width="500" height="300"/>
+</p>
 
 # How to use
 
