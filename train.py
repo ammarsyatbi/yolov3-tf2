@@ -23,7 +23,7 @@ flags.DEFINE_string('val_dataset', '', 'path to validation dataset')
 flags.DEFINE_boolean('tiny', False, 'yolov3 or yolov3-tiny')
 flags.DEFINE_string('weights', './checkpoints/yolov3.tf',
                     'path to weights file')
-flags.DEFINE_string('classes', './data/coco.names', 'path to classes file')
+flags.DEFINE_string('classes', './data/carplate.names', 'path to classes file')
 flags.DEFINE_enum('mode', 'fit', ['fit', 'eager_fit', 'eager_tf'],
                   'fit: model.fit, '
                   'eager_fit: model.fit(run_eagerly=True), '
@@ -36,18 +36,21 @@ flags.DEFINE_enum('transfer', 'none',
                   'frozen: Transfer and freeze all, '
                   'fine_tune: Transfer all and freeze darknet only')
 flags.DEFINE_integer('size', 416, 'image size')
-flags.DEFINE_integer('epochs', 2, 'number of epochs')
+flags.DEFINE_integer('epochs', 20, 'number of epochs')
 flags.DEFINE_integer('batch_size', 8, 'batch size')
 flags.DEFINE_float('learning_rate', 1e-3, 'learning rate')
-flags.DEFINE_integer('num_classes', 80, 'number of classes in the model')
+flags.DEFINE_integer('num_classes', 1, 'number of classes in the model')
 flags.DEFINE_integer('weights_num_classes', None, 'specify num class for `weights` file if different, '
                      'useful in transfer learning with different number of classes')
+flags.DEFINE_string('run', 'default', 'run version')
 
 
 def main(_argv):
     physical_devices = tf.config.experimental.list_physical_devices('GPU')
-    for physical_device in physical_devices:
-        tf.config.experimental.set_memory_growth(physical_device, True)
+    if len(physical_devices) > 0:
+        tf.config.experimental.set_memory_growth(physical_devices[0], True)
+    # for physical_device in physical_devices:
+    #     tf.config.experimental.set_memory_growth(physical_device, True)
 
     if FLAGS.tiny:
         model = YoloV3Tiny(FLAGS.size, training=True,
@@ -170,18 +173,17 @@ def main(_argv):
 
             avg_loss.reset_states()
             avg_val_loss.reset_states()
-            model.save_weights(
-                'checkpoints/yolov3_train_{}.tf'.format(epoch))
+            model.save_weights(f'checkpoints/run/{FLAGS.run}/yolov3_train_{epoch}.tf')
     else:
         model.compile(optimizer=optimizer, loss=loss,
                       run_eagerly=(FLAGS.mode == 'eager_fit'))
 
         callbacks = [
             ReduceLROnPlateau(verbose=1),
-            EarlyStopping(patience=3, verbose=1),
-            ModelCheckpoint('checkpoints/yolov3_train_{epoch}.tf',
+            # EarlyStopping(patience=3, verbose=1),
+            ModelCheckpoint(f'checkpoints/run/{FLAGS.run}/yolov3'+'_train_{epoch}.tf',
                             verbose=1, save_weights_only=True),
-            TensorBoard(log_dir='logs')
+            TensorBoard(log_dir=f'logs/{FLAGS.run}')
         ]
 
         history = model.fit(train_dataset,
